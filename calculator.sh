@@ -1,8 +1,9 @@
-echo "Number:"
-read  number
+number=$1
+secondNumber=$3
 
-
-echo "Second Number:"
-read secondNumber
+if [ $2 == '/' ] 
+then
+echo $(($1 / $3))
+fi
 
 echo "Result:" $(($number * $secondNumber))
